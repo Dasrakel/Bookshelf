@@ -1,0 +1,43 @@
+<p>
+  <b>Bookid:</b>
+  <%=h @book.bookId %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @book.author %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @book.title %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%=h @book.publisher %>
+</p>
+
+<p>
+  <b>Genreid:</b>
+  <%=h @book.genreId %>
+</p>
+
+<p>
+  <b>Dateadded:</b>
+  <%=h @book.dateAdded %>
+</p>
+
+<p>
+  <b>Totalpages:</b>
+  <%=h @book.totalPages %>
+</p>
+
+<p>
+  <b>Imageid:</b>
+  <%=h @book.imageId %>
+</p>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

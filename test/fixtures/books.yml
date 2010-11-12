@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bookId: 1
+  bookTitle: 
+  author: 
+  publisher: 
+  isbn: 
+  description: 
+
+two:
+  bookId: 1
+  bookTitle: 
+  author: 
+  publisher: 
+  isbn: 
+  description: 

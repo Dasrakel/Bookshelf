@@ -2,11 +2,11 @@ class CreateBooks < ActiveRecord::Migration
   def self.up
     create_table :books do |t|
       t.integer :bookId
-      t.String :bookTitle
-      t.String :author
-      t.String :publisher
-      t.String :isbn
-      t.String :description
+      t.string :bookTitle
+      t.string :author
+      t.string :publisher
+      t.string :isbn
+      t.string :description
 
       t.timestamps
     end

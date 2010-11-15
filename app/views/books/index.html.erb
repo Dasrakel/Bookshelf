@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Bookid</th>
     <th>Booktitle</th>
     <th>Author</th>
+    <th>genre</th>
     <th>Publisher</th>
     <th>Isbn</th>
     <th>Description</th>
@@ -15,9 +15,9 @@
 
 <% @books.each do |book| %>
   <tr>
-    <td><%= book.bookId %></td>
     <td><%= book.bookTitle %></td>
     <td><%= book.author %></td>
+    <td><%= book.genre %></td>
     <td><%= book.publisher %></td>
     <td><%= book.isbn %></td>
     <td><%= book.description %></td>

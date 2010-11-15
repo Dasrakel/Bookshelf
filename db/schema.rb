@@ -10,10 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101115124233) do
+ActiveRecord::Schema.define(:version => 20101115141214) do
 
   create_table "books", :force => true do |t|
-    t.integer  "bookId"
     t.string   "bookTitle"
     t.string   "author"
     t.string   "publisher"
@@ -21,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20101115124233) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "genre",       :limit => nil
+    t.string   "genre"
   end
 
   create_table "customers", :force => true do |t|

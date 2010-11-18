@@ -2,8 +2,9 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.xml
   def index
-    @books = Book.all
-
+    #@books = Book.all
+    @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2)
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @books }
@@ -13,8 +14,7 @@ class BooksController < ApplicationController
   # GET /books/1
   # GET /books/1.xml
   def show
-    @book = Book.find(params[:id])
-
+  @book = Book.find(params[:id])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @book }

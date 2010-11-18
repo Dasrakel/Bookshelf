@@ -1,17 +1,25 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  bookId: 1
-  bookTitle: 
-  author: 
-  publisher: 
-  isbn: 
-  description: 
+  bookTitle: Dublin
+  author: Siobhán Marie Kilfeather
+  genre: History
+  publisher: Oxford University Press
+  isbn: 0-1951-8201-4
+  description: Siobhan Kilfeather finds the legacy of the past undergoing a series of transformations in the vibrant atmosphere of contemporary Dublin.
 
 two:
-  bookId: 1
-  bookTitle: 
-  author: 
-  publisher: 
-  isbn: 
-  description: 
+  bookTitle: Les Misérables Volume 1
+  author: Victor Hugo
+  genre: Fiction
+  publisher: Little, Brown, and Company
+  isbn:
+  description:
+
+three:
+  bookTitle:
+  author:
+  genre:
+  publisher:
+  isbn:
+  description:

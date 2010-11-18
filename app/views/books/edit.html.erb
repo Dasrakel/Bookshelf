@@ -1,6 +1,11 @@
 <h1>Editing book</h1>
 
+<% if anybody_signed_in? %>
 <%= render 'form' %>
 
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Go back', books_path %>
+<% else %>
+<%= link_to 'Back', books_path %> or
+<%= link_to('Sign up to add edit books', new_customer_registration_path)  %>
+<% end %>
+

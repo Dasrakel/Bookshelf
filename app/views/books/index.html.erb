@@ -22,8 +22,13 @@
     <td><%= book.isbn %></td>
     <td><%= book.description %></td>
     <td><%= link_to 'Show', book %></td>
+        <% if anybody_signed_in? %>
+    <% if (current_customer.id).to_s==(book.customerId).to_s %>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
+
+     <%	end %>
+    <% end %>
   </tr>
 <% end %>
 </table>
@@ -31,4 +36,8 @@
 
 <br />
 
-<%= link_to 'New Book', new_book_path %>
+<% if anybody_signed_in? %>
+    <%= link_to 'New Book', new_book_path %>
+<% else %>
+  <%= link_to('Sign up to add new books', new_customer_registration_path)  %>
+<% end %>

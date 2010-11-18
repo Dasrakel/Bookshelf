@@ -24,6 +24,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="risbn" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" lib="sqlite3" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -72,6 +78,8 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v1.0.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/arel-1.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.6, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/rack-test-0.5.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/will_paginate-3.0.pre2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] risbn (v0.4.2, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/risbn-0.4.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/nokogiri-1.4.4)" level="application" />
   </component>
 </module>
 

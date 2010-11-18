@@ -1,5 +1,11 @@
 <h1>New book</h1>
 
+<% if anybody_signed_in? %>
 <%= render 'form' %>
+<%= link_to 'Go back', books_path %>
 
-<%= link_to 'Back', books_path %>
+<% else %>
+
+<%= link_to 'Back', books_path %> or
+<%= link_to('Sign up to add new books', new_customer_registration_path)  %>
+<% end %>

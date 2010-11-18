@@ -3,25 +3,17 @@ class BooksController < ApplicationController
   # GET /books.xml
   def index
     #@books = Book.all
-    #if no params[:genre]
-    #@books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2)
-    #else
-    @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2, :conditions => ['genre = ?', params[:genre]])
+    if(params[:genre])
+      @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2, :conditions => ['genre = ?', params[:genre]])
+    else
+      @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2) 
+    end
+
     respond_to do |format|
      format.html # index.html.erb
       format.xml  { render :xml => @books }
     end
   end
-
-  # GET /genre
-  def genre
-    @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @books }
-    end
-  end
-
 
   # GET /books/1
   # GET /books/1.xml

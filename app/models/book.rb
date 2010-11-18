@@ -3,5 +3,6 @@ class Book < ActiveRecord::Base
   def getIsbn
      RISBN::GData(self.isbn).data
   end
-  
+
+  belongs_to :genre
 end

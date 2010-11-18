@@ -1,4 +1,6 @@
 Bookshelf::Application.routes.draw do
+  resources :genres
+
   resources :books
 
   devise_for :customers

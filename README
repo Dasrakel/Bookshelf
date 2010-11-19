@@ -1,10 +1,14 @@
 Bookshelf
 -----------
-Index:
-(book.genre.name).to_s
+Show view show genre.name
+Deleted unneccesary book migration
+Add genres to books in migration: create some books
 
-Form:
-<%= f.select :genre_id,  Genre.all.collect {|g| [ g.name, g.id ] }, {:prompt => true} %>
+
+
+
+
+
 
 Migration:
     Genre.new(:name => 'Arts & Photography').save

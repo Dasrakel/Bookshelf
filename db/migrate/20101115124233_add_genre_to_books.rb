@@ -4,6 +4,6 @@ class AddGenreToBooks < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :books, :genre
+    remove_column :books, :genre_id
   end
 end

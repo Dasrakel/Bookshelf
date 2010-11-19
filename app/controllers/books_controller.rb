@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   def index
     #@books = Book.all
     if(params[:genre])
-      @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2, :conditions => ['genre = ?', params[:genre]])
+      @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2, :conditions => ['genre_id = ?', params[:genre]])
     else
       @books = Book.paginate(:page => params[:page],:order => 'id DESC', :per_page => 2) 
     end

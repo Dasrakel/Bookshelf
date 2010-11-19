@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :genre %><br />
-    <%= f.select :genre_id,  Genre.all.collect {|g| [ g.name, g.id ] }, {:prompt => true} %>
+    <%= f.select :genre_id,  Genre.all.collect {|g| [ g.name, g.id ] }, {:index => nil} %>
   </div>
   <div class="field">
     <%= f.label :publisher %><br />

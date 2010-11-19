@@ -1,15 +1,45 @@
 Bookshelf
 -----------
-Show view show genre.name
-Deleted unneccesary book migration
-Add genres to books in migration: create some books
+Vanaf 19/11/2010:
+
+<delete bookshelf>
+git clone git@github.com:DasRakel/Bookshelf.git (doe een clone wnr je in je projectmap staat)
+cd Bookshelf (ga in je project)
+    sudo apt-get install libxslt-dev
+    sudo apt-get install libxml2-dev
+    bundle install
+rake db:drop (maak db leeg)
+rails s (ga naar localhost:3000 en Sign up)
+rake db:migrate (vul db, met correcte data)
 
 
 
 
 
 
+Bijkomende informatie:
+----------------------
+OPEN SSL ERROR-FIX:
+# rvm package install openssl
+# rvm package install iconv
+# rvm remove 1.9.2
+# rvm install 1.9.2 -C --with-openssl-dir=$HOME/.rvm/usr,--with-iconv-dir=$HOME/.rvm/usr
+Read more: http://www.isnull.com.ar/2010/11/ruby-rails-this-error-occurred-while.html#ixzz15MM2tB6D
 
+INstalleren van RUbyMine:
+http://download.jetbrains.com/ruby/RubyMine-3.0-RC.tar.gz
+cd Downloads
+tar -xvzf RubyMine-3.0-RC.tar.gz
+sudo mv RubyMine-3.0 /opt/rubymine
+sudo ln -s /usr/bin/java /bin/java
+Add a launcher. I’m adding it to the top panel. Right-click on the panel and choose “Add to Panel”.
+There’s an icon at /opt/rubymine/bin/rubymine.png
+and the application is /opt/rubymine/bin/rubymine.sh
+
+
+
+Notities
+---------
 Migration:
     Genre.new(:name => 'Arts & Photography').save
     Genre.new(:name => 'Biographies & Memoirs').save

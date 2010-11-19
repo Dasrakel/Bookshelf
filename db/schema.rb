@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20101119075833) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "genre"
+    t.integer  "genre_id"
     t.string   "customerId"
   end
 

@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :genre %><br />
-    <%= f.collection_select(:genre, :id, Genre.all, :id, :name, :prompt => true) %>
+    <%= f.text_field :genre %>
   </div>
   <div class="field">
     <%= f.label :publisher %><br />

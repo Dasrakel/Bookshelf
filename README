@@ -2,6 +2,7 @@ Bookshelf
 -----------
 
 Vaste Genres:
+<%= f.collection_select(:genre, :id, Genre.all, :id, :name, :prompt => true) %>
     Genre.new(:name => 'Arts & Photography').save
     Genre.new(:name => 'Biographies & Memoirs').save
     Genre.new(:name => 'Business & Investing').save

@@ -6,23 +6,28 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body class="container_9">
      <p class="notice"><%= notice %></p>
      <p class="alert"><%= alert %></p>
-     <div id="user_nav">
+
+     <div id="content" class="grid_7">
+        <%= yield %>
+     </div>
+
+     <div id="user_nav" class="grid_2">
       <% if customer_signed_in? %>
          Signed in as <%= current_customer.email %>. Not you?
          <%= link_to "Sign out", destroy_customer_session_path %>
       <% else %>
          <%= link_to "Sign up", new_customer_registration_path %> or <%= link_to "sign in", new_customer_session_path %>
       <% end %>
-</div>
-<ul class="genres">
-    <%  Genre.all.each do |genre| %>
-         <li><a href="/books?genre=<%= genre.name %>"><%= genre.name %></a></li>
-    <%  end  %>
-</ul>
+    </div>
 
-     <%= yield %>
+     <ul class="genres" class="grid_2">
+      <%  Genre.all.each do |genre| %>
+         <li><a href="/books?genre=<%= genre.name %>"><%= genre.name %></a></li>
+      <%  end  %>
+     </ul>
+
 </body>
 </html>

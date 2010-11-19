@@ -14,20 +14,20 @@
         <%= yield %>
      </div>
 
-     <div id="user_nav" class="grid_2">
+     <div class="sidebar" class="grid_2">
       <% if customer_signed_in? %>
          Signed in as <%= current_customer.email %>. Not you?
          <%= link_to "Sign out", destroy_customer_session_path %>
       <% else %>
          <%= link_to "Sign up", new_customer_registration_path %> or <%= link_to "sign in", new_customer_session_path %>
       <% end %>
-    </div>
-
-     <ul class="genres" class="grid_2">
+  
+     <ul id="genres">
       <%  Genre.all.each do |genre| %>
          <li><a href="/books?genre=<%= genre.name %>"><%= genre.name %></a></li>
       <%  end  %>
      </ul>
+     </div>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 class AddGenreToBooks < ActiveRecord::Migration
   def self.up
-    add_column :books, :genre, :String
+    add_column :books, :genre_id, :integer
   end
 
   def self.down

@@ -17,12 +17,11 @@
          <%= link_to "Sign up", new_customer_registration_path %> or <%= link_to "sign in", new_customer_session_path %>
       <% end %>
 </div>
-<aside>
-<div class="genres">
-    
-</div>
-
-</aside>
+<ul class="genres">
+    <%  Genre.all.each do |genre| %>
+         <li><a href="/books?genre=<%= genre.name %>"><%= genre.name %></a></li>
+    <%  end  %>
+</ul>
 
      <%= yield %>
 </body>

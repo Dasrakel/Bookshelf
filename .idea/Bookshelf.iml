@@ -61,12 +61,15 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/railties-3.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/actionmailer-3.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] warden (v0.10.7, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/warden-0.10.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/will_paginate-3.0.pre2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/rake-0.8.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] risbn (v0.4.2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/risbn-0.4.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.4, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/thor-0.14.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.9, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/mail-2.2.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/rack-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/nokogiri-1.4.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.4.2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/i18n-0.4.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.6, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/erubis-2.6.6)" level="application" />
@@ -77,9 +80,6 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v1.0.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/arel-1.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.6, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/rack-test-0.5.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.pre2, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/will_paginate-3.0.pre2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] risbn (v0.4.2, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/risbn-0.4.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/nokogiri-1.4.4)" level="application" />
   </component>
 </module>
 

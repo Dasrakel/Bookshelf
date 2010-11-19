@@ -1,8 +1,12 @@
 Bookshelf
 -----------
+Index:
+(book.genre.name).to_s
 
-Vaste Genres:
-<%= f.collection_select(:genre, :id, Genre.all, :id, :name, :prompt => true) %>
+Form:
+<%= f.select :genre_id,  Genre.all.collect {|g| [ g.name, g.id ] }, {:prompt => true} %>
+
+Migration:
     Genre.new(:name => 'Arts & Photography').save
     Genre.new(:name => 'Biographies & Memoirs').save
     Genre.new(:name => 'Business & Investing').save

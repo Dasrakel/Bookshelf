@@ -2,11 +2,11 @@
 
 <table>
   <tr>
-    <th>Booktitle</th>
+    <th>Title</th>
     <th>Author</th>
     <th>genre</th>
     <th>Publisher</th>
-    <th>Isbn</th>
+    <th>ISBN</th>
     <th>Description</th>
     <th></th>
     <th></th>
@@ -23,10 +23,9 @@
     <td><%= book.description %></td>
     <td><%= link_to 'Show', book %></td>
         <% if anybody_signed_in? %>
-    <% if (current_customer.id).to_s==(book.customerId).to_s %>
+    <% if ((current_customer.id).to_s==(book.customerId).to_s or current_customer.admin)%>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
-
      <%	end %>
     <% end %>
   </tr>

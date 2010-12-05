@@ -5,4 +5,5 @@ class Book < ActiveRecord::Base
   end
 
   belongs_to :genre
+  belongs_to :customer
 end

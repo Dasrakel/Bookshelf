@@ -16,8 +16,9 @@
 
      <div class="sidebar" class="grid_2">
       <% if customer_signed_in? %>
-         Signed in as <%= (current_customer.admin ? "admin " : "") + current_customer.username %>. Not you?
-         <%= link_to "Sign out", destroy_customer_session_path %>
+         Signed in as <%= (current_customer.admin ? "admin " : "") + current_customer.username %>.<br />
+         Not you? <%= link_to "Sign out", destroy_customer_session_path %><br />
+         <%=link_to('Your profile', current_customer) %>
       <% else %>
          <%= link_to "Sign up", new_customer_registration_path %> or <%= link_to "sign in", new_customer_session_path %>
       <% end %>

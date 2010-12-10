@@ -8,24 +8,24 @@
     <th>Publisher</th>
     <th>ISBN</th>
     <th>Description</th>
-    <th></th>
+    <th>Seller</th>
     <th></th>
     <th></th>
   </tr>
 
 <% @books.each do |book| %>
   <tr>
-    <td><%= book.bookTitle %></td>
+    <td><%= link_to book.bookTitle, book %></td>
     <td><%= book.author %></td>
     <td><%= (book.genre.name).to_s %></td>
     <td><%= book.publisher %></td>
     <td><%= book.isbn %></td>
     <td><%= book.description %></td>
-    <td><%= link_to 'Show', book %></td>
-        <% if anybody_signed_in? %>
-    <% if ((current_customer.id).to_s==(book.customerId).to_s or current_customer.admin)%>
-    <td><%= link_to 'Edit', edit_book_path(book) %></td>
-    <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= Customer.find(book.customerId).username %></td>
+    <% if anybody_signed_in? %>
+     <% if ((current_customer.id).to_s==(book.customerId).to_s or current_customer.admin)%>
+      <td><%= link_to 'Edit', edit_book_path(book) %></td>
+      <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
      <%	end %>
     <% end %>
   </tr>

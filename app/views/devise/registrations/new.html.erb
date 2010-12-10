@@ -12,6 +12,11 @@
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
 
+  <%= f.fields_for :profile do |profile_form| %>
+    <p><%= profile_form.label :bio %><br />
+    <%= profile_form.text_field :bio %></p>
+  <% end %>
+
   <p><%= f.submit "Sign up" %></p>
 <% end %>
 

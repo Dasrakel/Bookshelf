@@ -1,9 +1,9 @@
 Bookshelf::Application.routes.draw do
+  resources :profiles
   resources :genres
-
   resources :books
-
   devise_for :customers
+  resources :customers
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

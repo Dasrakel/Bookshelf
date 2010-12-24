@@ -38,5 +38,5 @@
 </table>
 <%= will_paginate @books %>
 
-<%= link_to 'Edit your profile', edit_customer_path(@customer.id) %>
+<% if anybody_signed_in? %><%= link_to 'Edit your profile', edit_customer_path(@customer.id) %><% end %>
 <%= link_to 'Back', books_path %>

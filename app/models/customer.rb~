@@ -14,14 +14,4 @@ class   Customer < ActiveRecord::Base
   end
   
   has_many :books
-  
-  #validation /^(?=.*\d)(?=.*([a-z]|[A-Z]))([\x20-\x7E]){6,40}$/
-  validates :password, :format => {
-  	  :with => /^(?=.*\d)([\x20-\x7E]){6,40}$/,
-  	  :message => 'should contain atleast one integer.' + "\n natuurlijk"
-  }
-  validates :password, :format => {
-  	  :with => /^(?=.*([a-z]|[A-Z]))([\x20-\x7E]){6,40}$/,
-  	  :message => 'should contain atleast one alphabet(either in downcase or upcase).'
-  }
 end

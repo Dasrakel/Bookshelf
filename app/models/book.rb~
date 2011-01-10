@@ -6,7 +6,4 @@ class Book < ActiveRecord::Base
 
   belongs_to :genre
   belongs_to :customer
-  
-  #validation
-  validates :bookTitle, :author, :publisher, :description, :presence => true
 end

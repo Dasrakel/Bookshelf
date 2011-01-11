@@ -15,6 +15,10 @@ class   Customer < ActiveRecord::Base
   
   has_many :books
   
+    
+  #validation (opmk. emailadres wordt al gecontroleerd op uniekheid, username niet)
+  validates :username, :uniqueness => true
+  
   #validation /^(?=.*\d)(?=.*([a-z]|[A-Z]))([\x20-\x7E]){6,40}$/
   validates :password, :format => {
   	  :with => /^(?=.*\d)([\x20-\x7E]){6,40}$/,

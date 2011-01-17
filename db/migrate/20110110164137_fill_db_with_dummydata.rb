@@ -23,7 +23,7 @@ class FillDbWithDummydata < ActiveRecord::Migration
              :publisher => 'FairyTales',
              :genre_id => 3,
              :description => 'Wonderlijke gebeurtenissen in de Ruby wereld.',
-             #:customerId => 1
+             :customerId => 1
              ).save
 
     Book.new(:bookTitle => 'Ruby Nachtmerries',
@@ -31,7 +31,7 @@ class FillDbWithDummydata < ActiveRecord::Migration
              :publisher => 'Killer',
              :genre_id => 1,
              :description => 'Frustrerende gebeurtenissen in de Ruby wereld.',
-             #:customerId => 1
+             :customerId => 1
              ).save
   end
 

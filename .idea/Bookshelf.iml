@@ -80,6 +80,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v1.0.1, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/arel-1.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.6, /home/dasrakel/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/rack-test-0.5.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/thor-0.14.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.7, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/bundler-1.0.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/treetop-1.4.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.10, /home/ceetn/.rvm/gems/ruby-1.9.2-p0@osi-project/gems/mail-2.2.10)" level="application" />
   </component>
 </module>
 

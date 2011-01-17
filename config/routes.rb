@@ -1,7 +1,10 @@
 Bookshelf::Application.routes.draw do
   resources :profiles
   resources :genres
-  resources :books
+
+  resources :books do
+    post 'tr', :on => :member
+  end
   devise_for :customers
   resources :customers
 

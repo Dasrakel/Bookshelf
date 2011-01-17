@@ -62,6 +62,14 @@ class BooksController < ApplicationController
     end
   end
 
+  def tr
+    book = Book.find(params[:id])
+    ontvanger = Customer.find(book.customerId)
+    verzender = current_customer
+    Notifier.trade_request(book,ontvanger,verzender).deliver
+    redirect_to root_path , :notice => 'Ruil verzoek is verzonden.'
+  end
+
   # PUT /books/1
   # PUT /books/1.xml
   def update

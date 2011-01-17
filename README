@@ -13,7 +13,12 @@ rails s (ga naar localhost:3000 en Sign up)
 rake db:migrate (vul db, met correcte data)
 
 
+Vanaf 17 januari 2011
 
+rake db:seed (zal boeken en customers in de database steken)
+
+-> wanneer hij toch nog fouten geeft 'Couldn't find customer with ID=1' dan zal je handmatig 2
+   customers moeten maken (0.0.0.0:3000/customers/sign_up)
 
 
 

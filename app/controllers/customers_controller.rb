@@ -1,4 +1,16 @@
 class CustomersController < ApplicationController
+
+  def index
+    @customers = Customer.all
+
+@customers = @customers.paginate(:page => params[:page],:order => 'username ASC', :per_page => 6)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @customers }
+    end
+
+  end
 	
   # GET /customers/1
   # GET /customers/1.xml

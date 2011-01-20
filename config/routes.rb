@@ -1,4 +1,6 @@
 Bookshelf::Application.routes.draw do
+  get "customers/index"
+
   resources :profiles
   resources :genres
 

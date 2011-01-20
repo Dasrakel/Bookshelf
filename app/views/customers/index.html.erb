@@ -1,0 +1,33 @@
+<h1>Listing customers</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Bio</th>
+    <th>E-Mail</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customers.each do |customer| %>
+  <tr>
+    <td><%= link_to customer.username, customer %></td>
+    <td><%= customer.bio %></td>
+    <td><%= customer.email %></td>
+    <% if anybody_signed_in? %>
+     <% if ((current_customer.id).to_s==(customer.id).to_s or current_customer.admin)%>
+      <td><%= link_to '✎', edit_customer_path(customer) %></td>
+      <td><%= link_to '♻', customer, :confirm => 'Are you sure you want to delete this account?', :method => :delete %></td>
+     <%	end %>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @customers %>
+
+<br />
+
+<% if anybody_signed_in? %>
+<% else %>
+  <%= link_to('Sign up', new_customer_registration_path)  %>
+<% end %>

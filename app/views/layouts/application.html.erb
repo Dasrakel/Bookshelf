@@ -15,6 +15,7 @@
      </div>
 
      <div class="sidebar" class="grid_2">
+<%= link_to('List of all the sellers', customers_index_path) %>
       <% if customer_signed_in? %>
          Signed in as <%= (current_customer.admin ? "admin " : "") + current_customer.username %>.<br />
          Not you? <%= link_to "Sign out", destroy_customer_session_path %><br />
